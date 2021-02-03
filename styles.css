@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+*{
+    margin: 20px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Bai Jamjuree', sans-serif;
+    background: url("./images/bg-header-desktop.png") top fixed no-repeat;
+    background-size: contain;
+    font-size: 18px;
+    width: 90%;
+    margin: 20px auto 0 auto;
+}
+
+header, article, .download{
+    color: hsl(210, 10%, 33%);
+    text-align: center;
+    font-size: 18px;
+}
+header h1{
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.ios, .mac{
+    font-family: 'Bai Jamjuree', sans-serif;
+    background-color: hsl(171, 66%, 44%);
+    color: aliceblue;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px  hsl(210, 10%, 33%);
+}
+.ios:hover{
+    cursor: pointer;
+    background-color: hsl(171, 54%, 56%);
+}
+.mac{
+    background-color: hsl(233, 100%, 69%);
+}
+.mac:hover{
+    cursor: pointer;
+    background-color: hsl(233, 93%, 73%);
+}
+.pc{
+    display: flex;
+    margin-left: -15%;
+    justify-content: space-evenly;
+}
+.search, .sync, .history{
+    margin: 10px;
+    padding: 20px;
+}
+.devices{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.devices img{
+    width: 70%;
+}
+.workflow{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.details{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+.blacklists, .plain-text, .preview{
+    width: 40%;
+    justify-content: space-evenly;
+}
+.logos{
+    margin: 40px 0;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.download{
+    margin: 80px 0;
+}
+footer{
+    margin: 10% -6.6% 0 -6.6%;
+    background: hsl(204, 6%, 84%);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.footer-text{
+    width: 20%;
+    display: flex;
+    justify-content: space-evenly;
+    word-wrap: none;
+}
+.footer-text p:hover, .fab:hover{
+    cursor: pointer;
+    color: hsl(171, 46%, 40%);
+}
+
+@media only screen and (max-width: 375px){
+    *{
+        margin: 10px;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    header, article, .pc, .pc2, .devices, .workflow, .details, .logos, .download, footer{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    header img{
+        width: 30%;
+        margin: auto;
+    }
+    
+    .pc2{
+        margin-left: 20% ;
+    }
+    .blacklists, .plain-text, .preview{
+    width: 100%;
+    justify-content: space-evenly;
+    }
+    }
+    .logos img{
+        padding: 30px;
+    }
+    .pc img{
+        margin-left: 25%;
+    }
+}
